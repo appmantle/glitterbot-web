@@ -1,0 +1,375 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4em;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: 700;
+  line-height: 1.1em;
+}
+
+.container {
+  width: 100%;
+  max-width: calc(960px + 6em);
+  margin: 0 auto;
+  padding: 0 3em;
+}
+
+.button {
+  display: inline-block;
+  background-image: linear-gradient(-180deg, #3cbbff 0%, #3b2eff 100%);
+  border-radius: 0.2em;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6em 1em;
+  transition: 0.2s;
+  font-size: 0.9em;
+}
+
+.button:hover {
+  color: rgba(255, 255, 255, 0.8);
+  transform: translateY(1px);
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6em 0;
+  background-image: linear-gradient(-180deg, #3b2f12 0%, #000000 100%);
+}
+
+header .logo {
+  width: 256px;
+  height: 194px;
+  background-image: url("logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+header .subtitle {
+  font-size: 1.2em;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 100;
+}
+
+/* Description */
+.description {
+  font-size: 1.2em;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 300;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 3em 0;
+}
+
+/* Features */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3em 0;
+  padding-top: 6em;
+  align-items: flex-start;
+  margin: 0 -0.5em;
+}
+
+.feature {
+  flex: 0 0 100%;
+  padding: 0 0.5em 1em 0.5em;
+}
+
+.feature-tag {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  margin-bottom: 0.5em;
+}
+
+.feature-title {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.feature-description {
+  margin-top: 0.5em;
+}
+
+/* Open Source */
+.call-to-action {
+  padding: 3em 0;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 1.2em;
+}
+
+.cta-button {
+  margin-top: 1em;
+}
+
+/* Message preview */
+.preview {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 6em 0;
+  flex-direction: column;
+}
+
+.preview-column {
+  flex: 0 0 50%;
+  overflow: hidden;
+}
+
+.slack-container {
+  position: relative;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 1em;
+}
+
+.slack-window {
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  display: flex;
+  overflow: hidden;
+}
+
+.slack-sidebar {
+  display: none;
+}
+
+.slack-sidebar-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background: #fff;
+  display: inline-block;
+}
+
+.slack-content {
+  max-width: 100%;
+  padding: 12px 15px;
+}
+
+.slack-message {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.slack-avatar {
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  margin-right: 15px;
+  margin-top: 3px;
+}
+
+.avatar-glitter {
+  background-image: url(avatar.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.avatar-1 {
+  background-image: linear-gradient(
+      -128deg,
+      rgba(255, 255, 255, 0.3) 50%,
+      rgba(255, 255, 255, 0) 49%
+    ),
+    linear-gradient(
+      -211deg,
+      rgba(255, 255, 255, 0.2) 60%,
+      rgba(255, 255, 255, 0) 61%
+    ),
+    linear-gradient(-225deg, #fceb52 0%, #f5ad37 100%);
+}
+
+.avatar-2 {
+  background-image: linear-gradient(
+      -220deg,
+      rgba(255, 255, 255, 0.48) 39%,
+      rgba(255, 255, 255, 0) 39%
+    ),
+    linear-gradient(
+      -117deg,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 0.59) 51%
+    ),
+    linear-gradient(-180deg, #3cbbff 0%, #3b2eff 100%);
+}
+
+.slack-message-data {
+  flex: 1;
+}
+
+.slack-message-meta {
+  margin-bottom: -5px;
+}
+
+.slack-username {
+  display: inline-block;
+  font-weight: 600;
+}
+
+.slack-timestamp {
+  display: inline-block;
+  opacity: 0.5;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.slack-message-text {
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.slack-message-link {
+  color: #0097ff;
+  word-break: break-all;
+}
+
+.slack-message-image > img {
+  margin-top: 5px;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+}
+
+.preview-descriptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.preview-description {
+  flex: 0;
+  max-width: 600px;
+  padding: 0 3em;
+}
+
+/* Testimonials */
+.testimonials {
+  padding-bottom: 3em;
+}
+
+.testimonial {
+  padding-top: 3em;
+}
+
+.count {
+  opacity: 0.3;
+}
+
+.testimonial-text {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin: 0.5em 0;
+}
+
+.testimonial-name {
+  font-weight: 700;
+}
+
+.star {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url("star.png");
+  background-position: left center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.star-02 {
+  background-image: url("star-02.png");
+}
+
+.star-025 {
+  background-image: url("star-025.png");
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6em 0;
+  background-image: linear-gradient(0deg, #3b2f12 0%, #000000 100%);
+}
+
+.footer-link {
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+.footer-link:hover {
+  opacity: 1;
+}
+
+
+/* Desktop styling */
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .preview {
+    flex-direction: row;
+  }
+
+  .feature {
+    flex: 1;
+  }
+
+  .slack-container {
+    padding: 0;
+    height: 620px;
+  }
+
+  .slack-window {
+    width: 800px;
+    position: absolute;
+    right: 2em;
+  }
+
+  .slack-sidebar {
+    display: block;
+    background: #373737;
+    width: 180px;
+    line-height: 0;
+    padding: 10px;
+    align-self: stretch;
+  }
+
+  .preview-description {
+    padding: 0 0 0 2em;
+  }
+}
