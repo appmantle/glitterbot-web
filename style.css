@@ -33,6 +33,7 @@ h2 {
 
 .button {
   display: inline-block;
+  border: none;
   background-image: linear-gradient(-180deg, #3cbbff 0%, #3b2eff 100%);
   border-radius: 0.2em;
   color: #fff;
