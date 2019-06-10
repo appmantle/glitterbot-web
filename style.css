@@ -469,3 +469,35 @@ select {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+.settings {
+  position: relative;
+}
+
+.settings-wrapper {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.saving {
+  display: none;
+  padding-left: 0.5em;
+  opacity: 0.5;
+}
+
+.saved {
+  display: none;
+  padding-left: 0.5em;
+  color: #2ede5c;
+}
+
+.save-icon {
+  font-weight: 700;
+}
