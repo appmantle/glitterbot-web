@@ -785,6 +785,7 @@
               <button class="button" onClick="saveSettings()">
                 Save settings
               </button>
+              <span class="error" id="error"></span>
               <span class="saving" id="saving">Saving...</span>
               <span class="saved" id="saved"
                 ><span class="save-icon">✓</span> Saved</span
@@ -844,7 +845,7 @@
         })
         .then(function(json) {
           if ("error" in json) {
-            window.alert(json.error);
+            document.getElementById("loader").innerText = json.error;
           } else {
             document.getElementById("timezone").value = json.timezone;
             document.getElementById("minute").value = json.minute;
@@ -864,8 +865,11 @@
 
       function saveSettings() {
         if (!document.getElementById("timezone").value) {
-          window.alert("A timezone is required");
+          document.getElementById("error").innerText = "A timezone is required"
+          document.getElementById("error").style.display = "inline-block";
+          return;
         }
+        document.getElementById("error").style.display = "none";
         document.getElementById("saved").style.display = "none";
         document.getElementById("saving").style.display = "inline-block";
         var data = {
@@ -894,7 +898,8 @@
           .then(function(json) {
             document.getElementById("saving").style.display = "none";
             if ("error" in json) {
-              window.alert(json.error);
+              document.getElementById("error").innerText = json.error
+              document.getElementById("error").style.display = "inline-block";
             } else {
               document.getElementById("saved").style.display = "inline-block";
             }

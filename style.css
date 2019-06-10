@@ -492,6 +492,12 @@ select {
   opacity: 0.5;
 }
 
+.error {
+  display: none;
+  padding-left: 0.5em;
+  color: #ff6115;
+}
+
 .saved {
   display: none;
   padding-left: 0.5em;
