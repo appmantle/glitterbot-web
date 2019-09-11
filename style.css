@@ -114,14 +114,59 @@ header .subtitle {
   margin-top: 0.5em;
 }
 
-/* Open Source */
-.call-to-action {
-  padding: 3em 0;
-  text-align: center;
-}
+/* Get Glitterbot */
 
 .cta-title {
   font-size: 1.2em;
+}
+
+.get-gb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3em 0;
+  align-items: flex-start;
+  margin: 1em -0.5em;
+}
+
+.get-gb-item {
+  flex: 0 0 100%;
+  padding: 2em 0.5em 3em 0.5em;
+}
+
+.new-bot {
+  padding: 2em;
+  margin: -2em 0;
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 0.5em;
+  position: relative;
+}
+
+.new-bot-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #fcec51;
+  border-radius: 0.25em;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 0 0.5em;
+  color: #000;
+  background-image: radial-gradient(45% 54%,#fffbd2 46%,#fcec51 55%);
+  box-shadow: 0 0 44px 0 rgba(255,250,192,.45), 0 5px 21px 0 rgba(0,0,0,.1), inset 0 0 6px 6px #f3a437, inset 20px 0 9px 0 rgba(252,238,93,.62), inset -20px 0 9px 0 rgba(252,238,93,.27), inset 0 0 26px 20px #ffc62a;
+}
+
+.old-bot {
+  padding: 0 2em;
+}
+
+.call-to-action {
+  padding-top: 3em;
+  text-align: center;
+}
+
+.cta-item-title {
+  font-size: 1.2em;
+  font-weight: 500;
 }
 
 .cta-button {
@@ -340,6 +385,12 @@ footer {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .get-gb-item {
+    flex: 1;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .preview {
     flex-direction: row;
@@ -471,6 +522,7 @@ select {
 }
 
 .settings {
+  padding-bottom: 5em;
   position: relative;
 }
 
