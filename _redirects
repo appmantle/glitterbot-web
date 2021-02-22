@@ -1,2 +1,3 @@
 # Redirect default Netlify subdomain to primary domain
-https://glitterbot-web.netlify.app* https://glitterbot.dekoolecentrale.nl/:splat 301!
+https://glitterbot-web.netlify.app/* https://glitterbot.dekoolecentrale.nl/:splat 301!
+https://glitterbot.appmantle.com/* https://glitterbot.dekoolecentrale.nl/:splat 301!
