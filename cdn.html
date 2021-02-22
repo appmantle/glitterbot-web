@@ -7,15 +7,17 @@
     <link rel="shortcut icon" href="avatar.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
   </head>
 
   <body>
     <header>
-      <div class="logo"></div>
+      <a href="/" class="logo"></a>
       <h1>Glitterbot</h1>
       <div class="subtitle">Your team’s daily<br />source of motivation</div>
     </header>
     <div class="container">
+      <div class="lists" id="lists"></div>
       <section class="description">
         Glitterbot improves your team's productivity by boosting your team’s
         morale each morning. It accomplishes this morale boost by posting a new
@@ -51,205 +53,13 @@
           </p>
         </div>
       </div>
-
       <div class="call-to-action">
-        <div class="cta-title">Convinced? Get Glitterbot, its free.</div>
-        <div class="get-gb">
-          <div class="get-gb-item">
-            <div class="new-bot">
-              <div class="new-bot-badge">THE ONE AND ONLY</div>
-              <div class="cta-item-title">
-                Get Glitterbot for <strong>Slack</strong>
-              </div>
-              <p>
-                Glitterbot for Slack is Open Source. Get it now and run it on
-                any server.
-              </p>
-              <div class="cta-button">
-                <a href="https://github.com/koole/glitterbot" class="button"
-                  >View on Github</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="get-gb-item">
-            <div class="old-bot">
-              <div class="cta-item-title"><strong>GlitterCDN</strong></div>
-              <p>
-                The central glitter graphics repository.
-                <a href="https://github.com/koole/glittercdn"
-                  >Open for anyone to contribute to</a
-                >.
-              </p>
-              <div class="cta-button">
-                <a href="/cdn" class="button">View all Glitterplaatjes</a>
-              </div>
-            </div>
-          </div>
+        <div class="cta-title">Not sure what you're looking at?</div>
+        <div class="cta-button">
+          <a href="/" class="button">Learn more about Glitterbot</a>
         </div>
       </div>
     </div>
-
-    <div class="preview">
-      <div class="preview-column">
-        <div class="slack-container">
-          <div class="slack-window">
-            <div class="slack-sidebar">
-              <div class="slack-sidebar-dot"></div>
-              <div class="slack-sidebar-dot"></div>
-              <div class="slack-sidebar-dot"></div>
-            </div>
-            <div class="slack-content">
-              <div class="slack-message">
-                <div class="slack-avatar avatar-glitter"></div>
-                <div class="slack-message-data">
-                  <div class="slack-message-meta">
-                    <div class="slack-username">Glitterbot</div>
-                    <div class="slack-timestamp">9:00</div>
-                  </div>
-                  <div class="slack-message-text slack-message-link">
-                    https://super.vette.website/189368ce.gif
-                  </div>
-                  <div class="slack-message-image">
-                    <img
-                      src="https://super.vette.website/189368ce.gif"
-                      alt="Glitterplaatje"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="slack-message">
-                <div class="slack-avatar avatar-2"></div>
-                <div class="slack-message-data">
-                  <div class="slack-message-meta">
-                    <div class="slack-username">Leon Koole</div>
-                    <div class="slack-timestamp">9:00</div>
-                  </div>
-                  <div class="slack-message-text">Thanks Glitterbot!</div>
-                  <div class="slack-message-text">
-                    This will surely increase my productivity today!
-                  </div>
-                </div>
-              </div>
-              <div class="slack-message">
-                <div class="slack-avatar avatar-1"></div>
-                <div class="slack-message-data">
-                  <div class="slack-message-meta">
-                    <div class="slack-username">Bert-Jan Verwer</div>
-                    <div class="slack-timestamp">9:02</div>
-                  </div>
-                  <div class="slack-message-text">
-                    Thanks Glitterbot. A glitterplaatje a day keeps the doctor
-                    away! 👍
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="preview-column preview-descriptions">
-        <div class="preview-description">
-          <h2>How it works</h2>
-          <p>
-            Glitterbot posts a new Glitterplaatje at the start of each business
-            day, or even multiple times per day for teams working in multiple
-            time zones.
-          </p>
-        </div>
-        <div class="preview-description">
-          <h2>How people respond</h2>
-          <p>
-            Team morale is instantly improved upon seeing the message. Your
-            workforce will be more motivated to complete the tasks at hand.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <section class="testimonials">
-        <div class="testimonial">
-          <div class="rating">
-            <span class="star"></span>
-            <span class="star"></span>
-            <span class="star"></span>
-            <span class="star"></span>
-            <span class="star"></span>
-            <span class="count">5/5</span>
-          </div>
-          <p class="testimonial-text">
-            “Glitterbot has greatly improved our team’s morale. It makes our
-            employees feel like their work has a higher purpose. Each new
-            Glitterplaatje gives us a way to recognize our team members for a
-            job well done.”
-          </p>
-          <div class="testimonial-name">- Bert-Jan Verwer</div>
-        </div>
-        <div class="testimonial">
-          <div class="rating">
-            <span class="star star-025"></span>
-            <span class="count">0.25/5</span>
-          </div>
-          <p class="testimonial-text">“Glitterbot is polluting the chat.”</p>
-          <div class="testimonial-name">- Ryan Warsaw</div>
-        </div>
-        <div class="testimonial">
-          <div class="rating">
-            <span class="star"></span>
-            <span class="star"></span>
-            <span class="star"></span>
-            <span class="star"></span>
-            <span class="star"></span>
-            <span class="star star-02"></span>
-            <span class="count">5.2/5</span>
-          </div>
-          <p class="testimonial-text">
-            “I love Glitterbot! Waking up every day and receiving my daily dose
-            of motivation from Glitterbot always boosts my productivity.”
-          </p>
-          <div class="testimonial-name">- Kailan Blanks</div>
-        </div>
-      </section>
-
-      <div class="call-to-action">
-        <div class="cta-title">Convinced? Get Glitterbot, its free.</div>
-        <div class="get-gb">
-          <div class="get-gb-item">
-            <div class="new-bot">
-              <div class="new-bot-badge">THE ONE AND ONLY</div>
-              <div class="cta-item-title">
-                Get Glitterbot for <strong>Slack</strong>
-              </div>
-              <p>
-                Glitterbot for Slack is Open Source. Get it now and run it on
-                any server.
-              </p>
-              <div class="cta-button">
-                <a href="https://github.com/koole/glitterbot" class="button"
-                  >View on Github</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="get-gb-item">
-            <div class="old-bot">
-              <div class="cta-item-title"><strong>GlitterCDN</strong></div>
-              <p>
-                The central glitter graphics repository.
-                <a href="https://github.com/koole/glittercdn"
-                  >Open for anyone to contribute to</a
-                >.
-              </p>
-              <div class="cta-button">
-                <a href="/cdn" class="button">View all Glitterplaatjes</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <footer>
       <a class="footer-link" href="https://dekoolecentrale.nl">
         <svg
@@ -322,5 +132,59 @@
         </svg>
       </a>
     </footer>
+    <script>
+      const CDN = `http://super.vette.website/`;
+      fetch(`${CDN}images.json`)
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (glitterlist) {
+          const container = document.getElementById("lists");
+          for (const category in glitterlist) {
+            const categoryLink = document.createElement("a");
+            categoryLink.href = `#${category}`;
+            categoryLink.className = "category-link";
+            const linkText = document.createTextNode(category);
+            categoryLink.appendChild(linkText);
+            container.appendChild(categoryLink);
+          }
+          for (const category in glitterlist) {
+            const categoryContainer = document.createElement("div");
+            categoryContainer.className = "category-container";
+            container.appendChild(categoryContainer);
+
+            const categoryTitle = document.createElement("h2");
+            categoryTitle.className = "category-title";
+            categoryTitle.id = category;
+            const titleText = document.createTextNode(category);
+            categoryTitle.appendChild(titleText);
+            categoryContainer.appendChild(categoryTitle);
+
+            for (const image of glitterlist[category]) {
+              const imageElement = document.createElement("div");
+              imageElement.className = "lazy";
+              imageElement.setAttribute("data-bg", `${CDN}${image}`);
+              categoryContainer.appendChild(imageElement);
+
+              imageElement.addEventListener("click", () => {
+                const el = document.createElement("textarea");
+                el.value = `${CDN}${image}`;
+                document.body.appendChild(el);
+                el.select();
+                document.execCommand("copy");
+                document.body.removeChild(el);
+                window.alert(`Copied "${CDN}${image}"`);
+              });
+            }
+
+            var lazyLoadInstance = new LazyLoad({
+              // Your custom settings go here
+            });
+
+            console.log(category);
+            console.log(glitterlist[category]);
+          }
+        });
+    </script>
   </body>
 </html>

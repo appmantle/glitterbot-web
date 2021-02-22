@@ -1,7 +1,2 @@
-# Redirect domain aliases to primary domain
-https://glitterbot.js.org/* https://glitterbot.appmantle.com/:splat 301!
-
 # Redirect default Netlify subdomain to primary domain
-https://glitterbot.netlify.com/* https://glitterbot.appmantle.com/:splat 301!
-
-https://glitterbot.appmantle.com/settings/* https://glitterbot.appmantle.com/settings.html 200
+https://glitterbot-web.netlify.app* https://glitterbot.dekoolecentrale.nl/:splat 301!
