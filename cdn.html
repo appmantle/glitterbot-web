@@ -140,14 +140,29 @@
         })
         .then(function (glitterlist) {
           const container = document.getElementById("lists");
+          // List total amount of glitterplaatjes
+          let total = 0;
+          const totalCount = document.createElement("strong");
+          container.appendChild(totalCount);
+
+          // Create link for each category
           for (const category in glitterlist) {
+            const amount = glitterlist[category].length;
+            total += amount;
             const categoryLink = document.createElement("a");
             categoryLink.href = `#${category}`;
             categoryLink.className = "category-link";
-            const linkText = document.createTextNode(category);
+            const linkText = document.createTextNode(`${category} (${amount})`);
             categoryLink.appendChild(linkText);
             container.appendChild(categoryLink);
           }
+
+          // Set total count
+          totalCount.className = "category-link";
+          const totalText = document.createTextNode(`total (${total})`);
+          totalCount.appendChild(totalText);
+
+          // Create section for each category
           for (const category in glitterlist) {
             const categoryContainer = document.createElement("div");
             categoryContainer.className = "category-container";
@@ -160,6 +175,7 @@
             categoryTitle.appendChild(titleText);
             categoryContainer.appendChild(categoryTitle);
 
+            // Create lazy loading divs for each glitterplaatje
             for (const image of glitterlist[category]) {
               const imageElement = document.createElement("div");
               imageElement.className = "lazy";
@@ -176,14 +192,10 @@
                 window.alert(`Copied "${CDN}${image}"`);
               });
             }
-
-            var lazyLoadInstance = new LazyLoad({
-              // Your custom settings go here
-            });
-
-            console.log(category);
-            console.log(glitterlist[category]);
           }
+
+          // Start lazyloading after all images have been added to the DOM
+          var lazyLoadInstance = new LazyLoad();
         });
     </script>
   </body>
