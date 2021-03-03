@@ -135,12 +135,13 @@ header .subtitle {
   flex-wrap: wrap;
   padding: 3em 0;
   align-items: flex-start;
-  margin: 1em -0.5em;
+  justify-content: center;
+  margin: 1em -1em;
 }
 
 .get-gb-item {
   flex: 0 0 100%;
-  padding: 2em 0.5em 3em 0.5em;
+  padding: 2em 1em 3em 1em;
 }
 
 .new-bot {
@@ -400,7 +401,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
   .get-gb-item {
-    flex: 1;
+    flex: 0 0 50%;
   }
 }
 
