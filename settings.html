@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Glitterbot by De Koole Centrale</title>
+    <title>Chat Settings | Glitterbot by De Koole Centrale</title>
     <link rel="shortcut icon" href="avatar.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
@@ -12,7 +12,7 @@
   <body>
     <header>
       <a href="/" class="logo"></a>
-      <h1>Glitterbot - Settings</h1>
+      <h1>Glitterbot</h1>
     </header>
     <div class="container">
       <div class="settings">
@@ -984,6 +984,14 @@
           saturday: document.getElementById("saturday").checked,
           sunday: document.getElementById("sunday").checked,
         };
+        if (chatId.startsWith("YWY3M2I1Y2M4OGNkMjRkNTg4MzllODkxYj")) {
+          window.alert(
+            `Ik 🙋‍♂️ ben teleurgesteld 😔 dat het binnen 24 uur al nodig is om deze "beveiliging" 🔐 te moeten programmeren 👨‍💻, maar het is natuurlijk 🌳 niet 📵 de bedoeling dat iedereen 👨‍👨‍👦‍👦 zomaar de instellingen 🛠 van Glitterbot ✨🤖 in LC Community gaat saboteren 🥺.`
+          );
+          window.alert(`Mocht je je fout 😳 in zien en je leven 👽 willen beteren 👍, bekijk dan de volgende 🔜 tutorial...`)
+          window.location.href = "https://www.youtube.com/watch?v=hnGdUeAcUw4";
+          return;
+        }
         fetch(`https://glitterbot.appspot.com/settings/${chatId}`, {
           method: "PUT",
           mode: "cors",
